@@ -1,11 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+            <div class="col-md-4">
+                <div class="info-card">
+                    <div class="icon-box">⌘</div>
+                    <h3>Who I am</h3>
+                    <p>My name is Samson. I'm a Grade 12 student at Kings School with a strong interest in creating websites.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-card">
+                    <div class="icon-box">◎</div>
+                    <h3>My focus</h3>
+                    <p>I'm focused on web development, especially building simple, clean, and user-friendly web experiences.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-card">
+                    <div class="icon-box">↗</div>
+                    <h3>My goal</h3>
+                    <p>To keep learning, improve my coding skills, and create projects that solve real problems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section pt-0" id="projects">
+    <div class="container">
+        <div class="section-label">Selected work</div>
+        <h2 class="section-title">Projects I've built</h2>
+        <p class="section-intro mb-5">A couple of projects that show what I've been learning and practising.</p>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="project-card">
+                    <div class="d-flex justify-content-between mb-4">
+                        <span class="project-number">PROJECT 01</span>
+                        <span class="text-secondary">↗</span>
+                    </div>
+                    <h3>Personal Portfolio</h3>
+                    <p>A personal website made to introduce myself, share my work, and practise front-end web development.</p>
+                    <div class="mt-4">
+                        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-card">
+                    <div class="d-flex justify-content-between mb-4">
+                        <span class="project-number">PROJECT 02</span>
+                        <span class="text-secondary">↗</span>
+                    </div>
+                    <h3>PHP Portfolio</h3>
+                    <p>A portfolio website connected to a MySQL database, with a contact form that saves messages.</p>
+                    <div class="mt-4">
+                        <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section pt-0" id="learning">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="section-label">Currently learning</div>
+                <h2 class="section-title">Learning the logic behind the websites.</h2>
+                <p class="section-intro">I'm working on the basics of backend development and understanding how websites store and use information.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="info-card">
+                    <ul class="learning-list">
+                        <li><span>01</span> Backend basics</li>
+                        <li><span>02</span> PHP</li>
+                        <li><span>03</span> MySQL databases</li>
+                        <li><span>04</span> Connecting forms to databases</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section contact-section" id="contact">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5">
+                <div class="section-label">Get in touch</div>
+                <h2 class="section-title">Have something to say?</h2>
+                <p class="section-intro">Send me a message. Whether it's feedback, a question, or just a quick hello, I'd be happy to hear from you.</p>
+                <div class="mt-4 fw-bold">Samson <span style="color:var(--accent)">·</span> Student Developer</div>
+                <div class="text-secondary mt-1">Kings School · Grade 12</div>
+            </div>
+            <div class="col-lg-7">
+                <div class="contact-card">
+                    <?php if ($status !== ""): ?>
+                        <div class="alert <?= isset($_GET["sent"]) ? "alert-success" : "alert-warning" ?>"><?= clean($status) ?></div>
+                    <?php endif; ?>
+                    <form method="POST" action="#contact">
+                        <div class="mb-3">
+                            <label class="form-label" for="sender_name">Your name</label>
+                            <input class="form-control" type="text" id="sender_name" name="sender_name" maxlength="100" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="sender_email">Email address</label>
+                            <input class="form-control" type="email" id="sender_email" name="sender_email" maxlength="150" placeholder="you@example.com" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label" for="message">Your message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Hi Samson..." required></textarea>
+                        </div>
+                        <button class="btn btn-main w-100" type="submit" name="send_message">Send message <span class="ms-2">→</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
+
+<footer>
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+        <span>© <?= date("Y") ?> Samson. Built while learning.</span>
+        <span>Designed with care · Powered by PHP & MySQL</span>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>

@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$database = "yared_portfolio";
+$database = "biruk_portfolio";
 
 $conn = new mysqli($host, $user, $password);
 
@@ -72,7 +72,7 @@ if ($page === "messages") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yared melese| Student Developer</title>
+    <title>biruk ambachew | Student Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -292,7 +292,7 @@ if ($page === "messages") {
 <body>
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container py-2">
-        <a class="navbar-brand brand" href="index.php">yared<span style="color:var(--accent)">.</span></a>
+        <a class="navbar-brand brand" href="index.php">biruk<span style="color:var(--accent)">.</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -351,7 +351,7 @@ if ($page === "messages") {
         <div class="row align-items-center g-5">
             <div class="col-lg-8">
                 <div class="eyebrow"><span class="status-dot"></span> Grade 12 student · Learning every day</div>
-                <h1>Hi, I'm yared.<br>I build for the <span>web.</span></h1>
+                <h1>Hi, I'm biruk.<br>I build for the <span>web.</span></h1>
                 <p class="lead-text">I'm a Grade 12 student at Kings School, focused on web development. I enjoy turning ideas into clean, useful websites while learning how the web works behind the scenes.</p>
                 <div class="d-flex flex-wrap gap-3 mt-4">
                     <a href="#projects" class="btn btn-main">Explore my work <span class="ms-2">↗</span></a>
@@ -385,7 +385,7 @@ if ($page === "messages") {
             <div class="col-md-4">
                 <div class="info-card"><div class="icon-box">⌘</div>
                     <h3>Who I am</h3>
-                    <p>My name is yared. I'm a Grade 12 student at Kings School with a strong interest in creating websites.</p>
+                    <p>My name is biruk. I'm a Grade 12 student at Kings School with a strong interest in creating websites.</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -503,7 +503,7 @@ if ($page === "messages") {
 
 <footer>
     <div class="container d-flex flex-wrap justify-content-between gap-2">
-        <span>© <?= date("Y") ?> yared melese. Built while learning.</span>
+        <span>© <?= date("Y") ?> biruk ambachew. Built while learning.</span>
         <span>Designed with care · Powered by PHP & MySQL</span>
     </div>
 </footer>
